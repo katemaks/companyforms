@@ -1,29 +1,138 @@
-XYZ Limited
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business Registration Form</title>
+</head>
+<h2>XYZ Limited</h2>
+<body>
+        
+        <form action="Get">
 
-Business Registration Form
-Business Name: 
-
-CAC Registration Date: 
-mm/dd/yyyy
- CAC Registration State:  
-
-Contact Address: 
-
-Website: 
-
-Company Email: 
- Contact Phone Number: 
- Best Call Time:  
-mm/dd/yyyy --:--
-
-Briefly explain what your business does:
-
- 
-Principal Director's Detail:
-Title:   Mr   Mrs   Miss   Elder
-Full Name:  
- Age: 
- Position in company:  
-Areas of interest:   Product Development   Finance   Technology   Marketing   Advertising
-
-Submit  Reset
+            <fieldset>
+                 <legend> <h3>  Business Registration Form </h3></legend>
+             
+                    <p>
+                        <label for="businessname">Business Name: <input type="text" name="businessname" id="businessname" size="165px"></label>
+                    </p>
+                    <p>
+                        <label for="cacregdate">CAC Registration Date: <input type="date" name="cacregdate" id="cacregdate" size="60"></label>  
+                        <label for="cacregstate">CAC Registration State:</label>
+                        <select name="cacregstate" id="cacregstate">
+                            <option value=""></option>
+                            <option value="Abuja">Abuja</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Ogun">Ogun</option>
+                            <option value="Ondo">Ondo</option>
+                            <option value="Oyo">Oyo</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Ekiti">Ekiti</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Kwara">Kwara</option>
+                            <option value="Osun">Osun</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Anambra">Anambra</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Imo">Imo</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Rivers">Rivers</option>
+                            <option value="Kogi">Kogi</option>
+                            <option value="Cross River">Cross River</option>
+                            <option value="Akwa Ibom">Akwa Ibom</option>
+                            <option value="Ebonyi">Ebonyi</option>
+                            <option value="Jigawa">Jigawa</option>
+                            <option value="Yobe">Yobe</option>
+                            <option value="Bornu">Bornu</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Kastina">Kastina</option>
+                            <option value="Kebbi">Kebbi</option>
+                            <option value="Zamfara">Zamfara</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nasarawa">Nasarawa</option>
+                            <option value="Taraba">Taraba</option>
+                            <option value="Gombe">Gombe</option>
+                            <option value="Sokoto">Sokoto</option>
+                            <option value=""></option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="Contact Address">Contact Address: <input type="text" name="contactaddress" id="contactaddress" size="163px"></label>
+                    </p>
+                    
+                    <p>
+                            <label for="website">Website: <input type="text" name="website" id="website" size=171px></label>
+                        </p>
+                    <p>
+                        <label for="companyemail">Company Email: <input type="text" name="companyemail" id="companyemail" size="50px"></label>
+                        <label for="contactphonenumber">Contact Phone Number: <input type="text" name="contactphonenumber" id="contactphonenumber" size="43px"></label>
+                        <label for="bestcalltime">Best Call Time:</label>
+                        <input type="datetime-local" name="bestcalltime" id="bestcalltime">    
+                    </p>
+                   
+                    <p>
+                        <label for="companydetail">Briefly explain what your business does:</label>
+                    </p>
+                    <textarea name="businessbox" id="businessbox" cols="183" rows="10"></textarea>
+                    </p>
+                
+                  </div>
+                  <fieldset>
+                      
+                        <h4>Principal Director's Detail:</h4>
+                        <p>
+                            <div>
+                            <label for="title">Title: </label>
+                            <input type="radio" name="mr" id="mr" value="Mr">
+                            <label for="mr">Mr</label>
+                            <input type="radio" name="mrs" id="mrs" value="Mrs">
+                            <label for="mr">Mrs</label>
+                            <input type="radio" name="miss" id="miss" value="Miss">
+                            <label for="miss">Miss</label>
+                            <input type="radio" name="elder" id="elder" value="Elder">
+                            <label for="mr">Elder</label>
+                        </div>
+                        </p>
+                                               
+                            <div>
+                                <label for="fullname">Full Name:</label>
+                                <input type="text" name="fullname" id="fullname" size="35px">
+                                <label for="age">Age: <input type="number" name="age" min="1" max="100" size="40"  > </label> 
+                                <label for="">Position in company:</label>
+                                <select name="positionincompany" id="positionincompany" width =350 > ""
+                                 <option value="">MD</option>
+                                <option value="">CEO</option>
+                                <option value="">CFO</option>
+                                <option value="">CTO</option>
+                                <option value="">Not Management</option>
+                                </select>
+                            </div>
+                        <p>
+                            <label for="areaofinterest">Areas of interest:</label>
+                            <input type="checkbox" name="productdevelopment" id="productdevelopment">
+                            <label for="productdevelopment">Product Development</label>
+                            <input type="checkbox" name="finance" id="finance">
+                            <label for="finance">Finance</label>
+                            <input type="checkbox" name="technology" id="technology">
+                            <label for="technology">Technology</label>
+                            <input type="checkbox" name="marketing" id="marketing">
+                            <label for="marketing">Marketing</label>
+                            <input type="checkbox" name="advertising" id="advertising">
+                            <label for="advertising">Advertising</label>
+                        </p>
+                        </fieldset>
+                        <p>
+                                <button type="submit">Submit</button>
+                                <button type="reset">Reset</button>
+                        </p>
+                        
+                        </fieldset>
+            
+        </form>  
+</body>
+</html>
